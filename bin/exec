@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+### shebang line, means everything i write is going to be ruby, this folder is ruby
+
+require './lib/movie_exec'
+
+CLI.new.begin

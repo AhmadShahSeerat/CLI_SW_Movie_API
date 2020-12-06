@@ -1,6 +1,10 @@
+
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in SW_Movie_API.gemspec
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
+gem 'pry'
 
-gem "rake", "~> 12.0"
+gem 'rest-client'
+gem 'json'
+
