@@ -10,6 +10,10 @@ what classes i need to have
 .
 .
 .
-api class
-cli class
-movie class
+api class : since it deals with api i will only apis i will have all my api data parsed here and then take the data back to th cli class
+cli class:  this class deals with user, so i will created it to make sure i have connected my user to the program and api 
+actor class: in this class i will welcome the user, then give them the option to proceed the program. once user choose to
+             stay in the program then i will have him/her to see all the data from star war api, once they are in their
+            i will ask them if they want to play more and know more about the actors they like, if they choose to stay, i will have them
+            choose whether they want to stay in the program for more actors. this will on up until stop or exit from the program.
+    

@@ -1,28 +1,46 @@
 class CLI
 
     def begin
-        puts "#####################"
-        puts "Welcome to the amazing starwars API!"
+        puts ""
+        puts "I welcome you to the S.T movie API!"
+        puts ""
+        puts "┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴
+        ┴┴┴┴████┴┴┴▐█┴┴┴█▌┴┴█▌┴┴┴┴┴┴┴┴┴████┴┴┴┴┴┴┴┴███████┴┴┴┴██▌┴┴┴┴┴┴┴┴┴┴
+        ┴┴┴┴█▌┴┴▀▀┴▐█┴┴▐█┴┴▐██┴┴┴┴┴┴┴┴┴┴████┴┴┴┴▀███▀┴┴┴┴┴██▌┴┴██┴┴┴┴┴┴┴┴┴┴
+        ┴┴┴┴██┴┴┴┴┴┴▄▌▐██▌┴▐█┴┴┴┴┴┴┴┴┴┴┴┴┴┴█▌┴┴┴┴┴██┴┴┴┴┴┴┴█▌┴┴██┴┴┴┴┴┴┴┴┴┴
+        ┴┴┴┴██┴┴┴┴┴▐█┴▐█┴█┴██┴┴┴┴┴┴┴┴┴███┴┴█▌┴┴┴┴┴██┴┴┴┴┴▄██▌┴┴▐█┴┴┴┴┴┴┴┴┴┴
+        ┴┴┴┴▀████┴┴┴████████▌┴┴┴┴┴┴┴┴┴██▄▄▄██┴┴┴┴▐████▄████▀┴┴███┴┴┴┴┴┴┴┴┴┴
+        ┴┴┴┴┴┴┴┴┴██┴▐██▌▐███┴┴┴┴┴┴┴┴┴█████████┴┴┴▐█▌▀┴███▀┴┴┴███▀┴┴┴┴┴┴┴┴┴┴
+        ┴┴┴┴┴┴┴┴┴██┴┴██┴┴██▌┴┴┴┴┴┴┴┴██▀▀┴┴┴┴█▌┴┴┴▐█▌┴┴┴┴┴┴┴┴███┴┴┴┴┴┴┴┴┴┴┴┴
+        ┴┴┴┴┴┴┴┴┴██┴┴█▌┴┴██┴┴┴┴┴┴┴┴███┴┴┴┴┴██▌┴┴┴┴█▌┴┴┴┴┴┴┴▐██┴┴┴┴┴┴┴┴┴┴┴┴┴
+        ┴┴┴┴┴┴┴┴┴█▌┴▐█┴┴┴██┴┴┴┴┴┴┴███┴┴┴┴┴███┴┴┴┴▐█┴┴┴┴┴┴┴┴▐█┴┴┴┴┴┴┴┴┴┴┴┴┴┴
+        ┴┴███████▀┴┴▐█┴┴▐█┴┴┴┴┴┴┴┴██┴┴┴┴┴┴█┴┴┴┴┴┴┴█┴┴┴┴┴┴┴┴▐█┴┴┴┴┴┴┴┴┴┴┴┴┴┴
+        ┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴
+        ┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴
+         "
         puts "loading..."
+        puts ""
         API.web_info 
         main_menu_options
     end
-
+    
     def main_menu_options
-        puts "Type '1' to list characters"
-        puts "Type 'exit' to exit program"
+        puts ""
+        puts "We have all actors of SW movie!"
+        puts ""
+        puts "Press '1' to load all actors."
+        puts "Or type 'exit' to leave the program."
+        puts ""
         main_menu
     end
 
     def main_menu
         input = get_input
-
-        if input == "1"
+        if input == '1'
             list_actors
-            main_menu_options
     
         elsif input == "exit"
-            puts "Exiting Program"
+            puts "Leaving the Program."
             exit
         else
             invalid_choice
@@ -31,11 +49,15 @@ class CLI
     end
 
     def invalid_choice
-        puts "Invalid Choice. Please Try Again!"
+        puts ""
+        puts "-----------------"
+        puts "Wrong Entry. Please enter again!"
+        puts "-----------------"
+
     end
 
     def get_input
-        print "Enter Choice: "
+        puts "Please make a selection to proceed!"
         gets.chomp
     end
 
@@ -48,22 +70,26 @@ class CLI
     end
 
     def actor_details_menu_options
-        puts "Select the number next to the character you wish to know more about."
-        puts "Or type 'exit' to exit program"
+        puts ""
+        puts "Choose the number next to the actor you wish to know more about."
+        puts "-----------------"
+        puts "Or type 'exit' to leave the program"
+        puts "-----------------"
+    
         actor_details_menu
     end
 
     def actor_details_menu
         input = get_input
 
-        if input.to_i.between?(1, Actor.all.length)
+        if input.to_i.between?(1, Actor.all.length) 
             
-            index = input.to_i - 1
+            index = input.to_i - 1 #the index starts with zero, but we have already start our index from one, we want to make sure whatever they put should be minus one to be exactly what the program is about
             actor = Actor.all[index]
             print_actor_details(actor)
-            select_again_or_exit
+            choose_or_leave
         elsif input == "exit"
-            puts "Exiting Program"
+            puts "Leaving the program"
             exit
         else
             invalid_choice
@@ -80,20 +106,22 @@ class CLI
         puts "-----------------"
     end
 
-    def select_again_or_exit
-        puts "Would you like to go back to the main menu or exit?"
-        puts "'1' for main menu"
-        puts "'exit' to exit program"
+    def choose_or_leave
+        puts "-----------------"
+        puts "Want to know more"
+        puts "-----------------"
+        puts "Press '1' for main menu or 'exit' to leave the program"
+       
         input = get_input
 
         if input == '1'
             main_menu_options
         elsif input == "exit"
-            puts "Goodbye!"
+            puts "Check back soon!!"
             exit
         else
             invalid_choice
-            select_again_or_exit
+           choose_or_leave
         end
     end
 end
