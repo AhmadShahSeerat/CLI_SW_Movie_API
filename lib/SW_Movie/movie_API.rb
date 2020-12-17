@@ -19,7 +19,7 @@
                     data["results"].each do |actors_data|
                         Actor.new(actors_data)
                     end
-        
+        binding.pry
                     if data["next"].nil?
                         break
                     end
