@@ -9,7 +9,6 @@ class Actor
             self.birth_year = data["birth_year"]
             self.hair_color = data["hair_color"]
             self.homeworld_url = data["homeworld"]
-            # binding.pry
             @@all << self
         end
     

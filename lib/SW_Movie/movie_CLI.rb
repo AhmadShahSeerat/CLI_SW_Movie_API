@@ -108,7 +108,7 @@ class CLI
 
     def choose_or_leave
         puts "-----------------"
-        puts "Want to know more"
+        puts "Do you want to know about other characters too?"
         puts "-----------------"
         puts "Press '1' for main menu or 'exit' to leave the program"
        
