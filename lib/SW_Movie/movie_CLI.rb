@@ -102,7 +102,7 @@ class CLI
         puts "actor Name: #{actor.name}"
         puts "actor Birthyear: #{actor.birth_year}"
         puts "actor Hair Color: #{actor.hair_color}"
-        puts "actor Homeworld: #{actor.homeworld_url}"
+        puts "actor Eye Color: #{actor.eye_color}"
         puts "-----------------"
     end
 
